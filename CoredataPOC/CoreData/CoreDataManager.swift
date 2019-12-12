@@ -70,27 +70,28 @@ final class CoreDataManager: NSObject {
     }()
     
     func fetchList(completionHandler: @escaping CompletionHandler) {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CustomUser")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UsersList")
         
         fetchRequest.returnsObjectsAsFaults = false
         
         do {
-            let results = try managedObjectContext.fetch(fetchRequest) 
+            let results = try managedObjectContext.fetch(fetchRequest)
+            let userObj = [Users]()
             
             for resultObj in results {
-               print(resultObj)
+                print(resultObj)
             }
-             completionHandler(userObj as AnyObject)
+            completionHandler(userObj as AnyObject)
         } catch let error as NSError {
             print(error.localizedDescription)
         }
         
     }
     
-    func createUser(userData: CustomUser, compleationHandler: @escaping CompletionHandler) {
+    func createUser(userData: Users, compleationHandler: @escaping CompletionHandler) {
         
         // Create Entity Description
-        let entityDescription = NSEntityDescription.entity(forEntityName: "CustomUser", in: managedObjectContext)
+        let entityDescription = NSEntityDescription.entity(forEntityName: "UsersList", in: managedObjectContext)
         
         
         if let entityDescription = entityDescription {
@@ -99,14 +100,14 @@ final class CoreDataManager: NSObject {
             list.setValue(userData.first_name, forKey: "first_name")
             list.setValue(userData.first_name, forKey: "last_name")
             list.setValue(userData.email, forKey: "email")
-
+            
             print(list)
             
             do {
                 // Save Changes
                 try managedObjectContext.save()
                 compleationHandler("Success" as AnyObject)
-
+                
                 
             } catch {
                 // Error Handling

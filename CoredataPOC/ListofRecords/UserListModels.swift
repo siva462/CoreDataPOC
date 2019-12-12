@@ -23,7 +23,7 @@ enum UserList
     }
     struct Response
     {
-        var orders: [CustomUser]
+        var orders: [Users]
 
     }
     struct ViewModel

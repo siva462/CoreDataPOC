@@ -35,7 +35,7 @@ class CreateUserInteractor: CreateUserBusinessLogic, CreateUserDataStore
         worker = CreateUserWorker()
         worker?.doSomeWork()
         
-        let userObj = CustomUser(first_name: request.createUserFields.firstname, email: request.createUserFields.email, last_name: request.createUserFields.lastname)
+        let userObj = Users(first_name: request.createUserFields.firstname, email: request.createUserFields.email, last_name: request.createUserFields.lastname)
         
         CoreDataManager.sharedInstance.createUser(userData: userObj, compleationHandler: { (responce) -> Void in
             let response = CreateUser.Something.Response()

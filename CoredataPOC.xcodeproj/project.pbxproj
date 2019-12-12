@@ -13,20 +13,20 @@
 		4333D5BF23A0B44D00B6B8E2 /* CoredataPOC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4333D5BD23A0B44D00B6B8E2 /* CoredataPOC.xcdatamodeld */; };
 		4333D5C123A0B46300B6B8E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4333D5C023A0B46300B6B8E2 /* Assets.xcassets */; };
 		4333D5C423A0B46300B6B8E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4333D5C223A0B46300B6B8E2 /* LaunchScreen.storyboard */; };
+		4333D5DA23A0BF7B00B6B8E2 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333D5D923A0BF7B00B6B8E2 /* Users.swift */; };
 		4333D5DF23A0CE5300B6B8E2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333D5DE23A0CE5300B6B8E2 /* CoreDataManager.swift */; };
-		438A1A2023A1F7E200A6CE34 /* CreateUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A1A23A1F7E200A6CE34 /* CreateUserPresenter.swift */; };
-		438A1A2123A1F7E200A6CE34 /* CreateUserWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A1B23A1F7E200A6CE34 /* CreateUserWorker.swift */; };
-		438A1A2223A1F7E200A6CE34 /* CreateUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A1C23A1F7E200A6CE34 /* CreateUserRouter.swift */; };
-		438A1A2323A1F7E200A6CE34 /* CreateUserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A1D23A1F7E200A6CE34 /* CreateUserModels.swift */; };
-		438A1A2423A1F7E200A6CE34 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A1E23A1F7E200A6CE34 /* CreateUserViewController.swift */; };
-		438A1A2523A1F7E200A6CE34 /* CreateUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A1F23A1F7E200A6CE34 /* CreateUserInteractor.swift */; };
-		438A1A2C23A208A900A6CE34 /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A2623A208A900A6CE34 /* UserListPresenter.swift */; };
-		438A1A2D23A208A900A6CE34 /* UserListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A2723A208A900A6CE34 /* UserListWorker.swift */; };
-		438A1A2E23A208A900A6CE34 /* UserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A2823A208A900A6CE34 /* UserListRouter.swift */; };
-		438A1A2F23A208A900A6CE34 /* UserListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A2923A208A900A6CE34 /* UserListModels.swift */; };
-		438A1A3023A208A900A6CE34 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A2A23A208A900A6CE34 /* UserListViewController.swift */; };
-		438A1A3123A208A900A6CE34 /* UserListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A2B23A208A900A6CE34 /* UserListInteractor.swift */; };
-		438A1A3623A249B400A6CE34 /* CustomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A3523A249B400A6CE34 /* CustomUser.swift */; };
+		438A1A3D23A24E8A00A6CE34 /* UserListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A3723A24E8900A6CE34 /* UserListWorker.swift */; };
+		438A1A3E23A24E8A00A6CE34 /* UserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A3823A24E8900A6CE34 /* UserListRouter.swift */; };
+		438A1A3F23A24E8A00A6CE34 /* UserListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A3923A24E8900A6CE34 /* UserListInteractor.swift */; };
+		438A1A4023A24E8A00A6CE34 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A3A23A24E8900A6CE34 /* UserListViewController.swift */; };
+		438A1A4123A24E8A00A6CE34 /* UserListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A3B23A24E8900A6CE34 /* UserListModels.swift */; };
+		438A1A4223A24E8A00A6CE34 /* UserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A3C23A24E8A00A6CE34 /* UserListPresenter.swift */; };
+		438A1A4923A24E9500A6CE34 /* CreateUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A4323A24E9500A6CE34 /* CreateUserRouter.swift */; };
+		438A1A4A23A24E9500A6CE34 /* CreateUserWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A4423A24E9500A6CE34 /* CreateUserWorker.swift */; };
+		438A1A4B23A24E9500A6CE34 /* CreateUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A4523A24E9500A6CE34 /* CreateUserInteractor.swift */; };
+		438A1A4C23A24E9500A6CE34 /* CreateUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A4623A24E9500A6CE34 /* CreateUserPresenter.swift */; };
+		438A1A4D23A24E9500A6CE34 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A4723A24E9500A6CE34 /* CreateUserViewController.swift */; };
+		438A1A4E23A24E9500A6CE34 /* CreateUserModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A1A4823A24E9500A6CE34 /* CreateUserModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,20 +38,20 @@
 		4333D5C023A0B46300B6B8E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4333D5C323A0B46300B6B8E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4333D5C523A0B46300B6B8E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4333D5D923A0BF7B00B6B8E2 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		4333D5DE23A0CE5300B6B8E2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		438A1A1A23A1F7E200A6CE34 /* CreateUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserPresenter.swift; sourceTree = "<group>"; };
-		438A1A1B23A1F7E200A6CE34 /* CreateUserWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserWorker.swift; sourceTree = "<group>"; };
-		438A1A1C23A1F7E200A6CE34 /* CreateUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRouter.swift; sourceTree = "<group>"; };
-		438A1A1D23A1F7E200A6CE34 /* CreateUserModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserModels.swift; sourceTree = "<group>"; };
-		438A1A1E23A1F7E200A6CE34 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
-		438A1A1F23A1F7E200A6CE34 /* CreateUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserInteractor.swift; sourceTree = "<group>"; };
-		438A1A2623A208A900A6CE34 /* UserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
-		438A1A2723A208A900A6CE34 /* UserListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListWorker.swift; sourceTree = "<group>"; };
-		438A1A2823A208A900A6CE34 /* UserListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListRouter.swift; sourceTree = "<group>"; };
-		438A1A2923A208A900A6CE34 /* UserListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListModels.swift; sourceTree = "<group>"; };
-		438A1A2A23A208A900A6CE34 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
-		438A1A2B23A208A900A6CE34 /* UserListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListInteractor.swift; sourceTree = "<group>"; };
-		438A1A3523A249B400A6CE34 /* CustomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUser.swift; sourceTree = "<group>"; };
+		438A1A3723A24E8900A6CE34 /* UserListWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListWorker.swift; sourceTree = "<group>"; };
+		438A1A3823A24E8900A6CE34 /* UserListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListRouter.swift; sourceTree = "<group>"; };
+		438A1A3923A24E8900A6CE34 /* UserListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListInteractor.swift; sourceTree = "<group>"; };
+		438A1A3A23A24E8900A6CE34 /* UserListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		438A1A3B23A24E8900A6CE34 /* UserListModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListModels.swift; sourceTree = "<group>"; };
+		438A1A3C23A24E8A00A6CE34 /* UserListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListPresenter.swift; sourceTree = "<group>"; };
+		438A1A4323A24E9500A6CE34 /* CreateUserRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserRouter.swift; sourceTree = "<group>"; };
+		438A1A4423A24E9500A6CE34 /* CreateUserWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserWorker.swift; sourceTree = "<group>"; };
+		438A1A4523A24E9500A6CE34 /* CreateUserInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserInteractor.swift; sourceTree = "<group>"; };
+		438A1A4623A24E9500A6CE34 /* CreateUserPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserPresenter.swift; sourceTree = "<group>"; };
+		438A1A4723A24E9500A6CE34 /* CreateUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		438A1A4823A24E9500A6CE34 /* CreateUserModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +102,12 @@
 		4333D5CB23A0B52D00B6B8E2 /* ListofRecords */ = {
 			isa = PBXGroup;
 			children = (
-				438A1A2A23A208A900A6CE34 /* UserListViewController.swift */,
-				438A1A2623A208A900A6CE34 /* UserListPresenter.swift */,
-				438A1A2B23A208A900A6CE34 /* UserListInteractor.swift */,
-				438A1A2923A208A900A6CE34 /* UserListModels.swift */,
-				438A1A2823A208A900A6CE34 /* UserListRouter.swift */,
-				438A1A2723A208A900A6CE34 /* UserListWorker.swift */,
+				438A1A3923A24E8900A6CE34 /* UserListInteractor.swift */,
+				438A1A3B23A24E8900A6CE34 /* UserListModels.swift */,
+				438A1A3C23A24E8A00A6CE34 /* UserListPresenter.swift */,
+				438A1A3823A24E8900A6CE34 /* UserListRouter.swift */,
+				438A1A3A23A24E8900A6CE34 /* UserListViewController.swift */,
+				438A1A3723A24E8900A6CE34 /* UserListWorker.swift */,
 			);
 			path = ListofRecords;
 			sourceTree = "<group>";
@@ -115,7 +115,7 @@
 		4333D5D823A0BF5400B6B8E2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				438A1A3523A249B400A6CE34 /* CustomUser.swift */,
+				4333D5D923A0BF7B00B6B8E2 /* Users.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,12 +123,12 @@
 		4333D5DB23A0C45E00B6B8E2 /* CreateUsers */ = {
 			isa = PBXGroup;
 			children = (
-				438A1A1E23A1F7E200A6CE34 /* CreateUserViewController.swift */,
-				438A1A1A23A1F7E200A6CE34 /* CreateUserPresenter.swift */,
-				438A1A1F23A1F7E200A6CE34 /* CreateUserInteractor.swift */,
-				438A1A1D23A1F7E200A6CE34 /* CreateUserModels.swift */,
-				438A1A1C23A1F7E200A6CE34 /* CreateUserRouter.swift */,
-				438A1A1B23A1F7E200A6CE34 /* CreateUserWorker.swift */,
+				438A1A4723A24E9500A6CE34 /* CreateUserViewController.swift */,
+				438A1A4623A24E9500A6CE34 /* CreateUserPresenter.swift */,
+				438A1A4523A24E9500A6CE34 /* CreateUserInteractor.swift */,
+				438A1A4823A24E9500A6CE34 /* CreateUserModels.swift */,
+				438A1A4323A24E9500A6CE34 /* CreateUserRouter.swift */,
+				438A1A4423A24E9500A6CE34 /* CreateUserWorker.swift */,
 			);
 			path = CreateUsers;
 			sourceTree = "<group>";
@@ -212,23 +212,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438A1A4223A24E8A00A6CE34 /* UserListPresenter.swift in Sources */,
+				438A1A4923A24E9500A6CE34 /* CreateUserRouter.swift in Sources */,
 				4333D5BF23A0B44D00B6B8E2 /* CoredataPOC.xcdatamodeld in Sources */,
-				438A1A3123A208A900A6CE34 /* UserListInteractor.swift in Sources */,
-				438A1A2C23A208A900A6CE34 /* UserListPresenter.swift in Sources */,
-				438A1A2323A1F7E200A6CE34 /* CreateUserModels.swift in Sources */,
-				438A1A2D23A208A900A6CE34 /* UserListWorker.swift in Sources */,
-				438A1A2E23A208A900A6CE34 /* UserListRouter.swift in Sources */,
-				438A1A2523A1F7E200A6CE34 /* CreateUserInteractor.swift in Sources */,
-				438A1A2023A1F7E200A6CE34 /* CreateUserPresenter.swift in Sources */,
+				438A1A4A23A24E9500A6CE34 /* CreateUserWorker.swift in Sources */,
+				438A1A4C23A24E9500A6CE34 /* CreateUserPresenter.swift in Sources */,
+				438A1A3F23A24E8A00A6CE34 /* UserListInteractor.swift in Sources */,
+				438A1A4E23A24E9500A6CE34 /* CreateUserModels.swift in Sources */,
+				4333D5DA23A0BF7B00B6B8E2 /* Users.swift in Sources */,
 				4333D5B923A0B44D00B6B8E2 /* ViewController.swift in Sources */,
+				438A1A3E23A24E8A00A6CE34 /* UserListRouter.swift in Sources */,
+				438A1A4023A24E8A00A6CE34 /* UserListViewController.swift in Sources */,
 				4333D5B723A0B44D00B6B8E2 /* AppDelegate.swift in Sources */,
-				438A1A3023A208A900A6CE34 /* UserListViewController.swift in Sources */,
-				438A1A2423A1F7E200A6CE34 /* CreateUserViewController.swift in Sources */,
-				438A1A2123A1F7E200A6CE34 /* CreateUserWorker.swift in Sources */,
+				438A1A4D23A24E9500A6CE34 /* CreateUserViewController.swift in Sources */,
+				438A1A3D23A24E8A00A6CE34 /* UserListWorker.swift in Sources */,
+				438A1A4B23A24E9500A6CE34 /* CreateUserInteractor.swift in Sources */,
+				438A1A4123A24E8A00A6CE34 /* UserListModels.swift in Sources */,
 				4333D5DF23A0CE5300B6B8E2 /* CoreDataManager.swift in Sources */,
-				438A1A3623A249B400A6CE34 /* CustomUser.swift in Sources */,
-				438A1A2F23A208A900A6CE34 /* UserListModels.swift in Sources */,
-				438A1A2223A1F7E200A6CE34 /* CreateUserRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

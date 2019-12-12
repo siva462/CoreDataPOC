@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreData
 
 class Users: NSObject {
     var first_name = String()
@@ -22,4 +21,3 @@ class Users: NSObject {
     }
     
 }
-

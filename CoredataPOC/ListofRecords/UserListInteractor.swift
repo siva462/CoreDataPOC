@@ -36,7 +36,7 @@ class UserListInteractor: UserListBusinessLogic, UserListDataStore
     worker?.doSomeWork()
     
     CoreDataManager.sharedInstance.fetchList(completionHandler: { (responce) -> Void in
-        let response = UserList.Something.Response(orders: responce as! [CustomUser])
+        let response = UserList.Something.Response(orders: responce as! [Users])
 
         self.presenter?.presentSomething(response: response)
     })
