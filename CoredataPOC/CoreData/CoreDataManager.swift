@@ -15,15 +15,15 @@ import CoreData
 final class CoreDataManager: NSObject {
     // MARK: - Properties
     typealias CompletionHandler = (_ responce: AnyObject) -> Void
-    static let sharedInstance = CoreDataManager(modelName: "")
+    static let sharedInstance = CoreDataManager()
 
-    var modelName: String = "CoredataPOC"
+   // var modelName: String = "CoredataPOC"
     
     // MARK: - Initialization
     
-   private init(modelName: String) {
-        self.modelName = modelName
-    }
+//   private init(modelName: String) {
+//        self.modelName = modelName
+//    }
     
     // MARK: - Core Data Stack
     
@@ -36,7 +36,7 @@ final class CoreDataManager: NSObject {
     }()
     
     private lazy var managedObjectModel: NSManagedObjectModel = {
-        guard let modelURL = Bundle.main.url(forResource: self.modelName, withExtension: "momd") else {
+        guard let modelURL = Bundle.main.url(forResource: "CoredataPOC", withExtension: "momd") else {
             fatalError("Unable to Find Data Model")
         }
         
@@ -51,7 +51,7 @@ final class CoreDataManager: NSObject {
         let persistentStoreCoordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
         
         let fileManager = FileManager.default
-        let storeName = "\(self.modelName).sqlite"
+        let storeName = "CoredataPOC.sqlite"
         
         let documentsDirectoryURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask)[0]
         
@@ -69,19 +69,48 @@ final class CoreDataManager: NSObject {
         return persistentStoreCoordinator
     }()
     
-    func fetchList(completionHandler: CompletionHandler) {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UsersList")
+    func fetchList(completionHandler: @escaping CompletionHandler) {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CustomUser")
+        
+        fetchRequest.returnsObjectsAsFaults = false
         
         do {
-            let results = try managedObjectContext.fetch(fetchRequest)
-            let  Locations = results as! [Users]
-            completionHandler(Locations as AnyObject)
-          for location in Locations {
-                print(location)
+            let results = try managedObjectContext.fetch(fetchRequest) 
+            
+            for resultObj in results {
+               print(resultObj)
             }
+             completionHandler(userObj as AnyObject)
         } catch let error as NSError {
             print(error.localizedDescription)
         }
         
+    }
+    
+    func createUser(userData: CustomUser, compleationHandler: @escaping CompletionHandler) {
+        
+        // Create Entity Description
+        let entityDescription = NSEntityDescription.entity(forEntityName: "CustomUser", in: managedObjectContext)
+        
+        
+        if let entityDescription = entityDescription {
+            // Create Managed Object
+            let list = NSManagedObject(entity: entityDescription, insertInto: managedObjectContext)
+            list.setValue(userData.first_name, forKey: "first_name")
+            list.setValue(userData.first_name, forKey: "last_name")
+            list.setValue(userData.email, forKey: "email")
+
+            print(list)
+            
+            do {
+                // Save Changes
+                try managedObjectContext.save()
+                compleationHandler("Success" as AnyObject)
+
+                
+            } catch {
+                // Error Handling
+            }
+        }
     }
 }
