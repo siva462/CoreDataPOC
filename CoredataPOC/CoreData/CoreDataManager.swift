@@ -70,16 +70,16 @@ final class CoreDataManager: NSObject {
     }()
     
     func fetchList(completionHandler: @escaping CompletionHandler) {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UsersList")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CUser")
         
         fetchRequest.returnsObjectsAsFaults = false
         
         do {
             let results = try managedObjectContext.fetch(fetchRequest)
-            let userObj = [Users]()
+            var userObj = [CUsers]()
             
-            for resultObj in results {
-                print(resultObj)
+            for resultObj in results as! [NSManagedObject] {
+                //userObj.append(resultObj as! CUsers)
             }
             completionHandler(userObj as AnyObject)
         } catch let error as NSError {
@@ -88,10 +88,10 @@ final class CoreDataManager: NSObject {
         
     }
     
-    func createUser(userData: Users, compleationHandler: @escaping CompletionHandler) {
+    func createUser(userData: CUsers, compleationHandler: @escaping CompletionHandler) {
         
         // Create Entity Description
-        let entityDescription = NSEntityDescription.entity(forEntityName: "UsersList", in: managedObjectContext)
+        let entityDescription = NSEntityDescription.entity(forEntityName: "CUser", in: managedObjectContext)
         
         
         if let entityDescription = entityDescription {

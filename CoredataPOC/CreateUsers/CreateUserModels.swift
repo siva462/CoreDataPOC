@@ -31,12 +31,12 @@ enum CreateUser
     }
     struct Response
     {
-        var user: Users?
+        var user: CUsers?
         
     }
     struct ViewModel
     {
-        var user: Users?
+        var user: CUsers?
 
     }
   }
